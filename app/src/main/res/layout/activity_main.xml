@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250sp"
+            android:text="@string/enter_your_phone_number"
+            android:textSize="80sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="600sp"
+            android:layout_height="80sp"
+            android:gravity="center"
+            android:layout_marginTop="50sp"
+            android:textSize="50sp"
+            android:inputType="number"
+            android:hint="@string/_05x_xxx_xxxx"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meat"
+            android:layout_marginTop="50sp"
+            android:textSize="50sp"
+            android:onClick="onButtonClick"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
